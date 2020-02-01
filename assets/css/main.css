@@ -2324,6 +2324,8 @@ input, select, textarea {
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		resize: vertical;
+		touch-action: manipulation;
 	}
 
 		input[type="text"]:invalid,
