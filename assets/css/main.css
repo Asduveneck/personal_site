@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import url(base.css);
 
 /*
 	Hyperspace by HTML5 UP
@@ -98,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #121212;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3240,7 +3241,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			/* background-color: #5e42a6; */
 		}
 
 		.wrapper.style1-alt {
@@ -3521,10 +3522,9 @@ input, select, textarea {
 	}
 
 /* Sidebar */
-
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: var(--wt_05);
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3874,7 +3874,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		/* background-image: url("images/intro.svg"); */ /* Replace with canvas later */
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
