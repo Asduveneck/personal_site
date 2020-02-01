@@ -1552,7 +1552,11 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			/* BUG: Does not work on mobile */
+			/* textarea#message{
+				width: 100%;
+				background-color: magenta;
+			} */
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -3237,13 +3241,13 @@ input, select, textarea {
 				}
 
 			}
-
-		.wrapper.alt {
+			/* TODO: customize backgrounds later*/
+		/* .wrapper.alt {
 			background-color: #261c3e;
 		}
 
 		.wrapper.style1 {
-			/* background-color: #5e42a6; */
+			background-color: #5e42a6;
 		}
 
 		.wrapper.style1-alt {
@@ -3255,15 +3259,22 @@ input, select, textarea {
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #121212;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #121212;
 		}
 
 		.wrapper.style3-alt {
 			background-color: #953d75;
+		} */
+
+		.wrapper {
+			background-color: #121212;
+		}
+		.wrapper.style1-alt {
+			background-color: var(--wt_05);
 		}
 
 		.wrapper.fullscreen {
@@ -3526,7 +3537,7 @@ input, select, textarea {
 /* Sidebar */
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: var(--wt_05);
+		background: var(--wt_05); /* TODO: switch out transparency to solid */
 		cursor: default;
 		height: 100vh;
 		left: 0;
