@@ -3011,12 +3011,13 @@ input, select, textarea {
 		}
 
 		.spotlights > section > .image {
-			background-position: center center;
+			background-position: center top;
 			background-size: cover;
 			border-radius: 0;
 			display: block;
 			position: relative;
 			width: 25em;
+			margin: 0 2em; /* FINDME: Work in Progress. Style with content in media query to fix up spacing */
 		}
 
 			.spotlights > section > .image img {
@@ -3095,7 +3096,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 4em 2em 4em ;
+				padding: 4em 3em 2em 3em ; /* FINDME: Work in progress. fix this with image */
 			}
 
 		}
