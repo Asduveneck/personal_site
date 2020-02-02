@@ -3274,7 +3274,9 @@ input, select, textarea {
 			background-color: #121212;
 		}
 		.wrapper.style1-alt {
-			background-color: var(--wt_05);
+			/* background-color: var(--wt_05); */
+			background-color: #0f0f0f;
+			/* background-color: #121212; */
 		}
 
 		.wrapper.fullscreen {
