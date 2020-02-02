@@ -3180,19 +3180,17 @@ input, select, textarea {
 		}
 
 		.desc, .tech {
-			overflow-y: auto;
+			/* overflow-y: auto; */
 			margin: 1em 0;
 		}
 
-		.desc {
+		/* .desc { MAYBE put back in if skills list gets longer
 			height: 3em;
-			/* margin: 1em 0 0.5em; */
 		}
 
 		.tech {
 			height: 2em;
-			/* margin: 0.5em 0 1em; */
-		}
+		} */
 
 		@media screen and (max-width: 1680px) {
 
