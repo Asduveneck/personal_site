@@ -3130,6 +3130,15 @@ input, select, textarea {
 			border-radius: 15px;
 		}
 
+		@media screen and (max-width: 980px) {
+			.flexRow {
+				display: block;
+			}
+			.project {
+				margin: 2em  auto;
+			}
+		}
+
 		/* FINDME: Gradient color via background clip and transitioning the background on hover-over.
 		If this looks weird just transition color and use the bright orange as a transition */
 
