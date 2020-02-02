@@ -3093,6 +3093,31 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		.flexRow { /* FINDME: TODO: Make flexRow responsive to @media screen */
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			/* -ms-flex: 1; */
+		}
+		.flexCol {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			width: 25em;
+			-ms-flex: 1;
+			margin: 1em;
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
