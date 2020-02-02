@@ -3125,7 +3125,6 @@ input, select, textarea {
 
 		.project {
 			background-color: var(--wt_05);
-			/* background-color: rgba(187, 134, 252, 0.50); */
 			padding: 2em;
 			border-radius: 15px;
 		}
@@ -3153,6 +3152,10 @@ input, select, textarea {
 			background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 			background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+		}
+
+		.gif {
+			height: 15em;
 		}
 
 		.desc, .tech {
