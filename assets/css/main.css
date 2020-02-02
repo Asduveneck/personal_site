@@ -3107,10 +3107,11 @@ input, select, textarea {
 				display: block;
 			}
 
-				.spotlights > section > .image {
-					width: 100%;
-					height: 50vh;
-				}
+			.spotlights > section > .image {
+				width: calc(100% - 4em);
+				height: 50vh;
+				margin: 0 2em;
+			}
 
 				.spotlights > section > .content {
 					width: 100%;
