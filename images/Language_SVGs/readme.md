@@ -12,4 +12,4 @@ The following will be repeated for each SVG
 ```
 
 In Konpa's SVG, by default, the provided fill is always green. I will be replacing that with the colors
-`#5e42a6`, `#b74e91`, or some gradient of the two to match the other colors on my site.
+`#5e42a6`, `#b74e91`, or some gradient of the two to match the other colors on my site. I will occasionally need to modify the svg myself to add in proper colors, or making it multi-line so it renders properly (ex: `babel.svg` would break unless I split the path into multiple lines)
