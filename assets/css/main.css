@@ -218,7 +218,9 @@ input, select, textarea {
 	h2 {
 		font-size: 1.75em;
 	}
-
+	.title {
+		font-size: 1.5em;
+	}
 	h3 {
 		font-size: 1.1em;
 	}
@@ -243,6 +245,9 @@ input, select, textarea {
 
 		h2 {
 			font-size: 1.25em;
+		}
+		.title {
+			font-size: 1.125em;
 		}
 
 		h3 {
@@ -3116,6 +3121,44 @@ input, select, textarea {
 			width: 25em;
 			-ms-flex: 1;
 			margin: 1em;
+		}
+
+		.project {
+			background-color: var(--wt_05);
+			/* background-color: rgba(187, 134, 252, 0.50); */
+			padding: 2em;
+			border-radius: 15px;
+		}
+
+		/* FINDME: Gradient color via background clip and transitioning the background on hover-over.
+		If this looks weird just transition color and use the bright orange as a transition */
+
+		.project > .title {
+			background-color: #5e42a6;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			transition: background-color 0.3s ease;
+		}
+		.project > .title:hover {
+			background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+			background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+			background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+		}
+
+		.desc, .tech {
+			overflow-y: auto;
+			margin: 1em 0;
+		}
+
+		.desc {
+			height: 3em;
+			/* margin: 1em 0 0.5em; */
+		}
+
+		.tech {
+			height: 2em;
+			/* margin: 0.5em 0 1em; */
 		}
 
 		@media screen and (max-width: 1680px) {
