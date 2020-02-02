@@ -3142,6 +3142,8 @@ input, select, textarea {
 		If this looks weird just transition color and use the bright orange as a transition */
 
 		.project > .title {
+			/* display: inline-block; */
+			width: 45%;
 			background-color: #5e42a6;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
