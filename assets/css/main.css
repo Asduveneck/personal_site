@@ -3108,6 +3108,10 @@ input, select, textarea {
 			-ms-flex-direction: row;
 			flex-direction: row;
 			/* -ms-flex: 1; */
+			-moz-justify-content: space-evenly;
+			-webkit-justify-content: space-evenly;
+			-ms-justify-content: space-evenly;
+			justify-content: space-evenly;
 		}
 		.flexCol {
 			display: -moz-flex;
@@ -3129,9 +3133,14 @@ input, select, textarea {
 			border-radius: 15px;
 			transition-duration: 0.3s;
 			transition-property: transform;
+
+
 		}
 		.project:hover {
-				transform: translateY(-10px);
+			-moz-transform: translateY(-10px);
+			-webkit-transform: translateY(-10px);
+			-ms-transform: translateY(-10px);
+			transform: translateY(-10px);
     }
 
 		@media screen and (max-width: 980px) {
