@@ -1,6 +1,7 @@
 /* variables for using everywhere */
 
 :root {
+  --pseudo_wt_05: #212121;
   --wt_05: rgba(255, 255, 255, 0.05);
   --wt_11: rgba(255, 255, 255, 0.11);
   --wt_12: rgba(255, 255, 255, 0.12);

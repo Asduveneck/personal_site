@@ -3029,7 +3029,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(33, 33, 33, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3539,7 +3539,7 @@ input, select, textarea {
 /* Sidebar */
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: var(--wt_05); /* TODO: switch out transparency to solid */
+		background: var(--pseudo_wt_05);
 		cursor: default;
 		height: 100vh;
 		left: 0;
