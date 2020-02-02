@@ -3127,7 +3127,12 @@ input, select, textarea {
 			background-color: var(--wt_05);
 			padding: 2em;
 			border-radius: 15px;
+			transition-duration: 0.3s;
+			transition-property: transform;
 		}
+		.project:hover {
+				transform: translateY(-10px);
+    }
 
 		@media screen and (max-width: 980px) {
 			.flexRow {
@@ -3135,6 +3140,11 @@ input, select, textarea {
 			}
 			.project {
 				margin: 2em  auto;
+				transition-duration: 0.3s;
+				transition-property: transform;
+			}
+			.project:hover {
+				transform: translateY(0px);
 			}
 		}
 
