@@ -1,4 +1,4 @@
-Each Icon initially came from:
+Almost all icons come from:
 https://konpa.github.io/devicon/
 
 The following will be repeated for each SVG
@@ -11,7 +11,9 @@ The following will be repeated for each SVG
 <!-- SVG HERE -->
 ```
 
-In Konpa's SVG, by default, the provided fill is typically green. I will be replacing that with gradients of `#5e42a6`, `#b74e91`. 
+If the default color is black or not provided, I will recolor using a gradient of: `#5e42a6`, `#b74e91`. 
 
-I will occasionally need to modify the svg myself to add in proper colors, or making it multi-line so it renders properly (ex: `babel.svg` would break unless I split the path into multiple lines)
+I will occasionally need to modify the svg myself to add in proper colors, or making it multi-line so it renders properly (ex: `babel.svg` required a single `path` element to be split)
+
+The R logo came from: https://github.com/abranhe/programming-languages-logos/blob/master/src/r/r.svg
 
