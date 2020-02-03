@@ -2003,19 +2003,24 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		.features section {
+		.features .skill {
 			padding: 3.5em 3em 1em 7em ;
-			width: 25%;
+			width: 7.5em;
+			height: 10em;
 			border: solid 1px var(--wt_15);
 			position: relative;
+			margin: 1em;
+
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
 		}
 
-			.features section:nth-child(-n + 2) {
-				border-top-width: 0;
-			}
-
-			.features section:nth-child(2n) {
-				border-left: solid 1px var(--wt_15);
+			.features section h3 {
+				position: absolute;
+				top: 10%;
+				left: 5%;
 			}
 
 			.features section .icon {
@@ -2032,8 +2037,8 @@ input, select, textarea {
 				-ms-transform: scale(1);
 				transform: scale(1);
 				position: absolute;
-				left: 3em;
-				top: 3em;
+				left: 40%;
+				top: 50%;
 				opacity: 1;
 			}
 
@@ -2220,34 +2225,19 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 980px) {
-
-			.features {
-				display: block;
-			}
-
-				.features section {
-					border-top-width: 1px !important;
-					border-left-width: 0 !important;
-					width: 100%;
-				}
-
-					.features section:first-child {
-						border-top-width: 0 !important;
-					}
-
-		}
-
 		@media screen and (max-width: 736px) {
 
 			.features section {
 				padding: 2.5em 1.5em 0.1em 5.5em ;
 			}
 
-				.features section .icon {
-					left: 1.5em;
-					top: 2em;
-				}
+			.features section .icon {
+				top: 30%;
+			}
+
+			.features .skill h3 {
+				display: none;
+			}
 
 		}
 
