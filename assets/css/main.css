@@ -2177,6 +2177,41 @@ input, select, textarea {
 				transition-delay: 3s;
 			}
 
+			.features section:nth-child(21) .icon {
+				-moz-transition-delay: 3.15s;
+				-webkit-transition-delay: 3.15s;
+				-ms-transition-delay: 3.15s;
+				transition-delay: 3.15s;
+			}
+
+			.features section:nth-child(22) .icon {
+				-moz-transition-delay: 3.3s;
+				-webkit-transition-delay: 3.3s;
+				-ms-transition-delay: 3.3s;
+				transition-delay: 3.3s;
+			}
+
+			.features section:nth-child(23) .icon {
+				-moz-transition-delay: 3.45s;
+				-webkit-transition-delay: 3.45s;
+				-ms-transition-delay: 3.45s;
+				transition-delay: 3.45s;
+			}
+
+			.features section:nth-child(24) .icon {
+				-moz-transition-delay: 3.6s;
+				-webkit-transition-delay: 3.6s;
+				-ms-transition-delay: 3.6s;
+				transition-delay: 3.6s;
+			}
+
+			.features section:nth-child(25) .icon {
+				-moz-transition-delay: 3.75s;
+				-webkit-transition-delay: 3.75s;
+				-ms-transition-delay: 3.75s;
+				transition-delay: 3.75s;
+			}
+
 		.features.inactive section .icon {
 			-moz-transform: scale(0.5);
 			-webkit-transform: scale(0.5);
