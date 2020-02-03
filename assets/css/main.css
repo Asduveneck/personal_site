@@ -3128,15 +3128,14 @@ input, select, textarea {
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
-			width: 25em;
 			-ms-flex: 1;
-			margin: 1em;
 		}
-
 		.project {
 			background-color: var(--wt_05);
 			padding: 2em;
 			border-radius: 15px;
+			width: 25em;
+			margin: 1em;
 			transition-duration: 0.3s;
 			transition-property: transform;
 
