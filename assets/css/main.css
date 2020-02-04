@@ -2015,7 +2015,37 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			
 		}
+
+		@media screen and (max-width: 1280px) {
+
+		.features .skill:last-child {
+			max-width: 244.45px;
+		}
+
+		}
+
+
+ .features .skill:last-child {
+	 max-width: 196.44px;
+ }
+
+
+		.features .skill.last:after{ 
+			content: " ";
+			margin-left: 500px;
+			flex-basis: 30em;
+			min-width: 350px;
+			max-width: 450px;
+			-moz-flex-grow: 1000;
+			-webkit-flex-grow: 1000;
+			-ms-flex-grow: 1000;
+			flex-grow: 1000;
+			float:right;
+		}
+
+
 
 			.features section h3 {
 				position: absolute;
