@@ -3193,9 +3193,8 @@ input, select, textarea {
 			margin: 1em;
 			transition-duration: 0.3s;
 			transition-property: transform;
-
-
 		}
+
 		.project:hover {
 			-moz-transform: translateY(-10px);
 			-webkit-transform: translateY(-10px);
@@ -3224,10 +3223,19 @@ input, select, textarea {
 			/* display: inline-block; */
 			width: 45%;
 			background-color: #5e42a6;
+			-moz-background-clip: text;
 			-webkit-background-clip: text;
+			-ms-background-clip: text;
+			background-clip: text;
+
 			-webkit-text-fill-color: transparent;
+
+
 			transition: background-color 0.3s ease;
 		}
+
+
+
 		.project > .title:hover {
 			background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 			background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
