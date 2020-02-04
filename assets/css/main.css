@@ -3234,7 +3234,9 @@ input, select, textarea {
 			transition: background-color 0.3s ease;
 		}
 
-
+		.project a {
+			border: none;
+		}
 
 		.project > .title:hover {
 			background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
