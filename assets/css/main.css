@@ -3229,6 +3229,7 @@ input, select, textarea {
 			background-clip: text;
 
 			-webkit-text-fill-color: transparent;
+			color: transparent;
 
 
 			transition: background-color 0.3s ease;
