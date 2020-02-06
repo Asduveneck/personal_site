@@ -3240,7 +3240,7 @@ input, select, textarea {
 			border: none;
 		}
 
-		.project > .title:hover {
+		.project  .title:hover {
 			background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 			background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 			background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
@@ -3268,24 +3268,100 @@ input, select, textarea {
 
 		.gif:hover {
 			z-index: 0;
-			opacity: 0.3;
+			 /* filter: saturate(50%) brightness(70%); Cool but not desired */
 		}
 
 		.gif_link_container {
 			margin-top: 30%;
 			width: 100%;
-			background-color: maroon;
+		}
+
+		.gif_tint {
+			display: none;
+			height: 15em;
+			width: 100%;
+			background-color: rgba(0,0,0,0.5);
+			margin-bottom: -15em;
+		}
+		.gif:hover .gif_tint {
+			display: block;
+			cursor: pointer; /*  hover effect area wrong*/
 		}
 
 		.gif_link {
-			/* opacity: 0; */
-			background-color: magenta;
+			opacity: 0;
 		}
+		a.gif_link {
+			font-size: 24px;
+		}
+		
+
 		.gif:hover .gif_link {
 			opacity: 1;
 			
 		}
 
+
+	.ext_link { /* Credits belong to: http://baha.malyarchuk.space/  */
+		position: relative;
+		display: inline-block;
+		width: 3.0em;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: 100;
+		background-color: transparent;
+		border: none;
+		z-index: 10;
+	}
+
+	.ext_link:before {
+		content: '';
+		position: absolute;
+		width: 40%;
+		height: 200%;
+		top: -50%;
+		left: -15%;
+		background: #212121;
+		padding: 0px;
+		-webkit-border-radius: 10px;
+				border-radius: 10px;
+		z-index: -1;
+		-webkit-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
+	}
+
+	.ext_link:after {
+		content: '';
+		position: absolute;
+		width: 110%;
+		height: 10%;
+		top: 105%;
+		left: -5%;
+		/* background: #fff;
+		*/
+			background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+			background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+			background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+
+		padding: 0px;
+		z-index: 0;
+		-webkit-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
+	}
+
+	.ext_link:hover:before {
+		-webkit-border-radius: unset;
+				border-radius: unset;
+		-webkit-transform: translateX(120%) scaleX(3) scaleY(0.8);
+				transform: translateX(120%) scaleX(3) scaleY(0.8);
+	}
+
+	.ext_link:hover:after {
+		-webkit-transform: translateX(-55%) translateY(-550%) rotate(90deg) scaleX(0.5);
+				transform: translateX(-55%) translateY(-550%) rotate(90deg) scaleX(0.5);
+	}
 
 		
 
