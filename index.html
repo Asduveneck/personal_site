@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/github_calendar.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -74,7 +75,20 @@
 									</ul> -->
 								</div>
 							</div>
+
 						</section>
+
+	<!-- Prepare a container for your calendar. -->
+	<div class="calendar">
+		<!-- Loading stuff -->
+		Loading Alex Duveneck's Github contribution
+	</div>
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+	<script>
+		GitHubCalendar(".calendar", "Asduveneck");
+		// or enable responsive functionality
+		GitHubCalendar(".calendar", "Asduveneck", { responsive: true });
+	</script>
 
 						<!-- <section>
 							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
