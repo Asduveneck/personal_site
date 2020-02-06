@@ -160,7 +160,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterato
           return i.run(t, [e, e._useUTC]);
         };
     }, { days: 3, fillo: 5, months: 10, "parse-it": 11 }], 7: [function (e, t, r) {
-      t.exports = ["#eee", "#d6e685", "#8cc665", "#44a340", "#1e6823"];
+      t.exports = ["#212121", "#493382", "#5e42a6", "#b74e91", "#953d75"]; // FINDME: UPDATE COLORS HERE
     }, {}], 8: [function (e, t, r) {
       var i = e("github-calendar-legend"); t.exports = function (e) {
         function o() {
