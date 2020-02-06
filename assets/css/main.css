@@ -3246,7 +3246,7 @@ input, select, textarea {
 			background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
 		}
-		/* // BUG: REMOVE THESE .gif_container */
+
 		.gif_container {
 			width: 100%;
 			z-index: 1;
@@ -3254,16 +3254,11 @@ input, select, textarea {
 			/* background-color: magenta; */
 		}
 
-		.gif_container:hover {
-			background-color: #121212;
-			z-index: 5;
-
-		}
-
 		.gif {
-			width: 100%;
+			width: 120%;
 			height: 15em;
 			background-size: contain;
+			background-repeat: no-repeat;
 		}
 
 		.gif:hover {
@@ -3278,7 +3273,7 @@ input, select, textarea {
 
 		.gif_tint {
 			display: none;
-			height: 15em;
+			height: 11.8em;
 			width: 100%;
 			background-color: rgba(0,0,0,0.5);
 			margin-bottom: -15em;
@@ -3302,7 +3297,7 @@ input, select, textarea {
 		}
 
 
-	.ext_link { /* Credits belong to: http://baha.malyarchuk.space/  */
+	.ext_link { /* Original design belong to: http://baha.malyarchuk.space/  */
 		position: relative;
 		display: inline-block;
 		width: 3.0em;
@@ -3338,12 +3333,10 @@ input, select, textarea {
 		height: 10%;
 		top: 105%;
 		left: -5%;
-		/* background: #fff;
-		*/
-			background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-			background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-			background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-			background-image: linear-gradient(to right, #5e42a6, #b74e91); 
+		background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+		background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+		background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+		background-image: linear-gradient(to right, #5e42a6, #b74e91); 
 
 		padding: 0px;
 		z-index: 0;
