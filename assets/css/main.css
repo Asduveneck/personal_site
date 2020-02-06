@@ -3285,7 +3285,7 @@ input, select, textarea {
 		}
 		.gif:hover .gif_tint {
 			display: block;
-			cursor: pointer; /*  hover effect area wrong*/
+
 		}
 
 		.gif_link {
