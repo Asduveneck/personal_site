@@ -125,3 +125,7 @@ h2.f4.text-normal.mb-3 {
 #user-activity-overview{
     display:none;
 }
+
+.js-calendar-graph-svg {
+overflow-x: auto;
+}

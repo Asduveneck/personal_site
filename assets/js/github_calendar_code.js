@@ -198,6 +198,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterato
                 var a = { fill: t, date: new Date(r), count: n, level: i.indexOf(t) }; 0 === s.current_streak && (s.current_streak_range[0] = a.date), a.count ? (++s.current_streak, s.last_year += a.count, s.last_contributed = a.date, s.current_streak_range[1] = a.date) : (o(), s.current_streak = 0), u.push(a), s.days.push(a);
                 console.log(j);
                 console.log(a);
+                // debugger;
               }
           }), o(), s;
       };
