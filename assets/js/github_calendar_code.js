@@ -189,13 +189,13 @@ var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterato
                 j = `fill="#953d75"`;
                 break;
             }
-            var t = j, // FINDME: Update colors here too by matching?
+            let t = j, // FINDME: Update colors here too by matching?
               r = e.match(/data-date="([0-9\-]+)"/),
               n = e.match(/data-count="([0-9]+)"/); if (t = t && t[1], r = r && r[1], n = n && +n[1], t) {
                 // debugger;
                 // let j = "1d1d1d"
 
-                var a = { fill: t, date: new Date(r), count: n, level: i.indexOf(t) }; 0 === s.current_streak && (s.current_streak_range[0] = a.date), a.count ? (++s.current_streak, s.last_year += a.count, s.last_contributed = a.date, s.current_streak_range[1] = a.date) : (o(), s.current_streak = 0), u.push(a), s.days.push(a);
+                var a = { fill: j, date: new Date(r), count: n, level: i.indexOf(t) }; 0 === s.current_streak && (s.current_streak_range[0] = a.date), a.count ? (++s.current_streak, s.last_year += a.count, s.last_contributed = a.date, s.current_streak_range[1] = a.date) : (o(), s.current_streak = 0), u.push(a), s.days.push(a);
                 console.log(j);
                 console.log(a);
                 // debugger;

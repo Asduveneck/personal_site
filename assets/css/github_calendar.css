@@ -126,6 +126,6 @@ h2.f4.text-normal.mb-3 {
     display:none;
 }
 
-.js-calendar-graph-svg {
+.js-calendar-graph-svg >g  {
 overflow-x: auto;
 }
