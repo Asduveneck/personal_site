@@ -160,7 +160,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterato
           return i.run(t, [e, e._useUTC]);
         };
     }, { days: 3, fillo: 5, months: 10, "parse-it": 11 }], 7: [function (e, t, r) {
-      t.exports = ["#212121", "#493382", "#5e42a6", "#b74e91", "#953d75"]; // FINDME: UPDATE COLORS HERE
+      t.exports = ["#1d1d1d", "#493382", "#5e42a6", "#b74e91", "#953d75"]; // FINDME: UPDATE COLORS HERE
     }, {}], 8: [function (e, t, r) {
       var i = e("github-calendar-legend"); t.exports = function (e) {
         function o() {
@@ -169,10 +169,34 @@ var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterato
           u = []; return e.split("\n").slice(2).map(function (e) {
             return e.trim();
           }).forEach(function (e) {
-            if (e.startsWith("<g transform")) return u.length && s.weeks.push(u) && (u = []); var t = e.match(/fill="(#[a-z0-9]+)"/), // FINDME: Update colors here too by matching?
+            if (e.startsWith("<g transform")) return u.length && s.weeks.push(u) && (u = []); 
+              let j = `fill="#1d1d1d"`;
+            switch(e.match(/fill="(#[a-z0-9]+)"/) ) {
+              case `fill="#eee"`:
+                j = `fill="#1d1d1d"`;
+                break;
+              case `fill="#d6e685"`:
+                j = `fill="#493382"`;
+                break;
+              case `fill="#8cc665"`:
+                j = `fill="#5e42a6"`;
+                break;
+              case `fill="#44a340"`:
+                j = `fill="#b74e91"`;
+                break;
+              case `fill="#1e6823"`:
+                j = `fill="#953d75"`;
+                break;
+            }
+            var t = j, // FINDME: Update colors here too by matching?
               r = e.match(/data-date="([0-9\-]+)"/),
               n = e.match(/data-count="([0-9]+)"/); if (t = t && t[1], r = r && r[1], n = n && +n[1], t) {
+                // debugger;
+                // let j = "1d1d1d"
+
                 var a = { fill: t, date: new Date(r), count: n, level: i.indexOf(t) }; 0 === s.current_streak && (s.current_streak_range[0] = a.date), a.count ? (++s.current_streak, s.last_year += a.count, s.last_contributed = a.date, s.current_streak_range[1] = a.date) : (o(), s.current_streak = 0), u.push(a), s.days.push(a);
+                console.log(j);
+                console.log(a);
               }
           }), o(), s;
       };
