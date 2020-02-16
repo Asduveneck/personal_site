@@ -3185,6 +3185,12 @@ input, select, textarea {
 			flex-direction: column;
 			-ms-flex: 1;
 		}
+		.space_between {
+			-moz-justify-content: space-between;
+			-webkit-justify-content: space-between;
+			-ms-justify-content: space-between;
+			justify-content: space-between;
+		}
 		.project {
 			background-color: var(--wt_05);
 			padding: 2em;
