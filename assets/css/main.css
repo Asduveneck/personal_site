@@ -4208,3 +4208,31 @@ input, select, textarea {
 			}
 
 		}
+
+/* Resume Section */
+	.res_title {
+		margin-bottom: 0.05em;
+		margin-top: 0.5em;
+	}
+
+	.res_links {
+		margin-top: 0.5em;
+		margin-bottom: 0;
+	}
+
+	.italic {
+		font-style: italic;
+		margin: 0 0;
+	}
+
+	/* Education */
+  .ed.exp {
+		width: 55vw;
+		overflow-x: auto;
+	}
+
+	.ed.date {
+		width: 12vw;
+		text-align: right;
+
+	}
