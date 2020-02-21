@@ -3672,7 +3672,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: rgba(255, 255, 255, 0.05);
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -4218,6 +4218,13 @@ input, select, textarea {
 	.res_links {
 		margin-top: 0.5em;
 		margin-bottom: 0;
+	}
+	.rs_lnk {
+		color: #5e42a6;
+		border-color: #5e42a6;
+	}
+	.rs_lnk:hover {
+		color: #b74e91;
 	}
 
 	.italic {
