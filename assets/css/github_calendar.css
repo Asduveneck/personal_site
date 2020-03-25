@@ -125,3 +125,29 @@ h2.f4.text-normal.mb-3 {
 #user-activity-overview{
     display:none;
 }
+
+/* level 1 (no commits) */
+rect.day[fill="#ebedf0"] {
+    fill: magenta;
+}
+
+/* level 2 */
+rect.day[fill="#c6e48b"] {
+    fill: magenta;
+}
+/* level 3 */
+rect.day[fill="#7bc96f"] {
+    fill: magenta;
+}
+/* level 4 */
+rect.day[fill="#239a3b"] {
+    fill: magenta;
+}
+/* level 5 */
+rect.day[fill="#1e6823"] {
+    fill: magenta;
+}
+
+
+      /* // t.exports = ["#1d1d1d", "#493382", "#5e42a6", "#b74e91", "#953d75"]; // FINDME: UPDATE COLORS HERE */
+      /* t.exports = ["#eee", "#d6e685", "#8cc665", "#44a340", "#1e6823"]; */
