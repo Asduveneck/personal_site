@@ -128,26 +128,40 @@ h2.f4.text-normal.mb-3 {
 
 /* level 1 (no commits) */
 rect.day[fill="#ebedf0"] {
-    fill: magenta;
+    fill: #1d1d1d;
+}
+.legend>:nth-child(1) {
+    background-color: #1d1d1d !important;
 }
 
 /* level 2 */
 rect.day[fill="#c6e48b"] {
-    fill: magenta;
+    fill: #493382;
 }
+.legend>:nth-child(2) {
+    background-color: #493382 !important;
+}
+
 /* level 3 */
 rect.day[fill="#7bc96f"] {
-    fill: magenta;
+    fill: #5e42a6;
 }
+.legend>:nth-child(3) {
+    background-color: #5e42a6 !important;
+}
+
 /* level 4 */
 rect.day[fill="#239a3b"] {
-    fill: magenta;
+    fill: #b74e91;
 }
+.legend>:nth-child(4) {
+    background-color: #b74e91 !important;
+}
+
 /* level 5 */
-rect.day[fill="#1e6823"] {
-    fill: magenta;
+rect.day[fill="#196127"] {
+    fill: #953d75;
 }
-
-
-      /* // t.exports = ["#1d1d1d", "#493382", "#5e42a6", "#b74e91", "#953d75"]; // FINDME: UPDATE COLORS HERE */
-      /* t.exports = ["#eee", "#d6e685", "#8cc665", "#44a340", "#1e6823"]; */
+.legend>:nth-child(5) {
+    background-color: #953d75 !important;
+}
