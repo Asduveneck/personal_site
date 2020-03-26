@@ -136,32 +136,32 @@ rect.day[fill="#ebedf0"] {
 
 /* level 2 */
 rect.day[fill="#c6e48b"] {
-    fill: #493382;
+    fill: #32286f;
 }
 .legend>:nth-child(2) {
-    background-color: #493382 !important;
+    background-color: #32286f !important;
 }
 
 /* level 3 */
 rect.day[fill="#7bc96f"] {
-    fill: #5e42a6;
+    fill: #552c6d;
 }
 .legend>:nth-child(3) {
-    background-color: #5e42a6 !important;
+    background-color: #552c6d !important;
 }
 
 /* level 4 */
 rect.day[fill="#239a3b"] {
-    fill: #b74e91;
+    fill: #792f69;
 }
 .legend>:nth-child(4) {
-    background-color: #b74e91 !important;
+    background-color: #792f69 !important;
 }
 
 /* level 5 */
 rect.day[fill="#196127"] {
-    fill: #953d75;
+    fill: #b63664;
 }
 .legend>:nth-child(5) {
-    background-color: #953d75 !important;
+    background-color: #b63664 !important;
 }
