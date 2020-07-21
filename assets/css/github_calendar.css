@@ -106,10 +106,12 @@
     margin-left: 9px;
     color: #767676;
 }
+
 .left.text-muted a {
     color: #4078c0;
     text-decoration: none;
 }
+
 .left.text-muted a:hover,
 .monospace a:hover {
     text-decoration: underline;
@@ -122,46 +124,52 @@ h2.f4.text-normal.mb-3 {
 .float-left.text-gray {
     float: left;
 }
-#user-activity-overview{
-    display:none;
+
+#user-activity-overview {
+    display: none;
 }
 
 /* level 1 (no commits) */
 rect.day[fill="#ebedf0"] {
     fill: #1d1d1d;
 }
+
 .legend>:nth-child(1) {
     background-color: #1d1d1d !important;
 }
 
 /* level 2 */
-rect.day[fill="#c6e48b"] {
+rect.day[fill="#9be9a8"] {
     fill: #32286f;
 }
+
 .legend>:nth-child(2) {
     background-color: #32286f !important;
 }
 
 /* level 3 */
-rect.day[fill="#7bc96f"] {
+rect.day[fill="#40c463"] {
     fill: #552c6d;
 }
+
 .legend>:nth-child(3) {
     background-color: #552c6d !important;
 }
 
 /* level 4 */
-rect.day[fill="#239a3b"] {
+rect.day[fill="#30a14e"] {
     fill: #792f69;
 }
+
 .legend>:nth-child(4) {
     background-color: #792f69 !important;
 }
 
 /* level 5 */
-rect.day[fill="#196127"] {
+rect.day[fill="#216e39"] {
     fill: #b63664;
 }
+
 .legend>:nth-child(5) {
     background-color: #b63664 !important;
 }
