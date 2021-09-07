@@ -17,7 +17,6 @@
 
 <body class="is-preload">
 
-	<!-- Header -->
 	<header id="header">
 		<a href="index.html" class="title">Resume</a>
 		<nav>
@@ -28,73 +27,34 @@
 		</nav>
 	</header>
 
-	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Projects -->
-		<section id="main" class="wrapper">
-			<div class="inner">
-				<h1 class="major">Projects</h1>
-
-				<div class="exp">
-					<div class="flexRow space_between">
-						<h3 class="res_title">1000px</h3>
-						<div class="res_links">
-							<a target="_blank" href="https://asd-1000pix.herokuapp.com/" class="rs_lnk">Live</a> &nbsp;|&nbsp;
-							<a target="_blank" href="https://github.com/Asduveneck/500pix_clone" class="rs_lnk">Github</a>
-						</div>
-					</div>
-
-					<li>Paginated traditional index for implementing infinite scroll, reducing load time and enhancing user
-						experience</li>
-					<li>Reused HTML class assignment with SCSS mixins for cohesive styling and increased site performance</li>
-					<li>Combined ActiveStorage with AWS S3 Buckets to store images in the cloud with image information in the
-						database</li>
-					<li>Designed database with numerous joins tables and indexed foreign keys to minimize data duplication and
-						enhance data retrieval</li>
-					<li>Utilized BCrypt’s hashing algorithm with Auth Routes to secure user privacy and guide the user</li>
-				</div>
-
-				<div class="exp">
-					<div class="flexRow space_between">
-						<h3 class="res_title">GetYoked</h3>
-						<div class="res_links">
-							<a target="_blank" href="https://get-yoked.herokuapp.com/#/" class="rs_lnk">Live</a> &nbsp;|&nbsp;
-							<a target="_blank" href="https://github.com/Asduveneck/GetYoked" class="rs_lnk">Github</a>
-						</div>
-					</div>
-					<li>Refactored code into modular async await functions and callbacks to overcome promise racing and
-						undocumented bugs</li>
-					<li>Designed functions to automate content and formatting of the user’s achievements, gamifying the UX</li>
-					<li>Simplified database seeding by designing functions to automate properly formatted JSON objects with nested
-						documents</li>
-					<li>Leveraged Javascript’s asynchronous single-threading with MongoDB’s multi-threading for significantly
-						higher data transfers</li>
-				</div>
-
-				<div class="exp">
-					<div class="flexRow space_between">
-						<h3 class="res_title">SickMaps: in Progress</h3>
-						<!-- <div class="res_links">
-										<a>Live</a> &nbsp;|&nbsp;
-										<a>Github</a>
-									</div> -->
-					</div>
-					<li>Leveraged D3’s SVG creation with MapBox’s mapping API to overlay statistical graphs atop of geographic
-						data</li>
-					<li>Implemented modals to overlay the visualization, providing a guided tour of the project and data</li>
-					<li>Standardized variables across JS components to create a cohesive UX, such as integrating a timeline with
-						the statistical data</li>
-				</div>
-
-			</div>
-		</section>
-
-
-		<!-- Work Experience-->
 		<section id="main" class="wrapper">
 			<div class="inner">
 				<h1 class="major">Experience</h1>
+
+				<div class="exp">
+					<div class="flexRow space_between">
+						<h3 class="res_title">Cradle Genomics</h3>
+						<h3 class="res_title">San Diego, CA</h3>
+					</div>
+					<span class="italic">Software Engineer</span> <br />
+					<span>August 2020 - September 2021</span>
+					<li> Tested, developed, and deployed software updates independently and with supervisor while adhering to
+						 agile methodology</li>
+					<li> Architected modular and flexible internal form services to reduce patient intake time by over 50%</li>
+					<li> Spearheaded internal React Component Library with TypeScript and Storybook for documentation and
+						 development ease, and packaged the library via rollup.js to modularize code and minimize package size via tree-shaking</li>
+					<li> Designed polymorphic input classes that encapsulated rendering, validation, and pre-population to
+						 simplify creating and implementing new input types</li>
+					<li> Implemented dynamic validation via the Chain of Responsibility pattern to simplify backend JSON \
+						 structure and ensure flexibility in handling varying types and quantities of conditions</li>
+					<li> On-boarded third-party software consultants to internal code base by delegating tickets and pair-programming together</li>
+					<li> Introduced non-technical co-workers to YML, JSON, python, and git to empower them to
+						 manage simple configuration files and invoke simple bash/python scripts as necessary</li>
+					<li> Wrote custom python scripts in conjunction with third-party Illumina APIs to customize
+						 the inventory system to interact with external software and analysis pipelines</li>
+				</div>
 
 				<div class="exp">
 					<div class="flexRow space_between">
@@ -104,12 +64,11 @@
 					<span class="italic">Laboratory Technician</span> <br />
 					<span>December 2017 - August 2018</span>
 					<li>Crafted a web app with R-Shiny, HTML, and Javascript for interactive data analysis and visualization</li>
-					<li>Identified shortcomings in preexisting software and developed an alternate pipeline to screen and analyze
-						genetic data via machine learning, reducing wait time by 15 hours</li>
-					<li>Benchmarked and optimized code to run on high-performance clusters, reducing execution time by an
-						additional 90%</li>
-					<li>Tracked weekly progress in bilateral meetings with supervisor and presented key findings to the end-client
-						via reports and presentations</li>
+					<li>Identified shortcomings in preexisting software and developed an alternate pipeline to screen and analyze genetic data
+						 via HDBSCAN and consensus clustering, reducing wait time by 15 hours</li>
+					<li>Benchmarked and optimized code to run on high-performance clusters, reducing execution time by an additional 90%</li>
+					<li>Tracked weekly progress in bilateral meetings with supervisor and presented key findings to the end-client and global department
+						 heads via reports and presentations</li>
 				</div>
 
 				<div class="exp">
@@ -135,6 +94,40 @@
 					<li>Skiing and Snowboarding instructor for all age groups and for beginner to intermediate levels</li>
 					<li>Assists in the rental shop and performs other duties as needed</li>
 				</div>
+			</div>
+		</section>
+
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major">Projects</h1>
+
+				<div class="exp">
+					<div class="flexRow space_between">
+						<h3 class="res_title">1000px</h3>
+						<div class="res_links">
+							<a target="_blank" href="https://asd-1000pix.herokuapp.com/" class="rs_lnk">Live</a> &nbsp;|&nbsp;
+							<a target="_blank" href="https://github.com/Asduveneck/500pix_clone" class="rs_lnk">Github</a>
+						</div>
+					</div>
+
+					<li>Hosted images in AWS S3 buckets while storing metadata within the database to enable scalability</li>
+					<li>Paginated traditional index to manually implement infinite scroll, reducing load time and enhancing user experience</li>
+					<li>Implemented Jbuilder in the Views to shape the JSON output from API requests to maintain a flat Redux State</li>
+				</div>
+
+				<div class="exp">
+					<div class="flexRow space_between">
+						<h3 class="res_title">GetYoked</h3>
+						<div class="res_links">
+							<a target="_blank" href="https://get-yoked.herokuapp.com/#/" class="rs_lnk">Live</a> &nbsp;|&nbsp;
+							<a target="_blank" href="https://github.com/Asduveneck/GetYoked" class="rs_lnk">Github</a>
+						</div>
+					</div>
+					<li>Collaborated with 3 classmates to learn and complete a MERN project within a week, documenting and managing progress</li>
+					<li>Designed functions to calculate the user’s achievements progress, gamifying the UX</li>
+					<li>Refactored code into modular async await functions and callbacks to handle asynchronous promises </li>
+				</div>
+
 			</div>
 		</section>
 
@@ -206,7 +199,6 @@
 
 	</div>
 
-	<!-- Footer -->
 	<footer id="footer" class="wrapper alt">
 		<div class="inner">
 			<ul class="menu">
