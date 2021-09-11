@@ -1,10 +1,42 @@
+:root {
+    --color-calendar-graph-day-bg: #1d1d1d;
+    --color-calendar-graph-day-L1-bg: #32286f;
+    --color-calendar-graph-day-L2-bg: #552c6d;
+    --color-calendar-graph-day-L3-bg: #792f69;
+    --color-calendar-graph-day-L4-bg: #b63664;
+}
+
+rect.ContributionCalendar-day[data-level='0'] {
+    fill: var(--color-calendar-graph-day-bg);
+}
+
+rect.ContributionCalendar-day[data-level='1'] {
+    fill: var(--color-calendar-graph-day-L1-bg);
+}
+
+rect.ContributionCalendar-day[data-level='2'] {
+    fill: var(--color-calendar-graph-day-L2-bg);
+}
+
+rect.ContributionCalendar-day[data-level='3'] {
+    fill: var(--color-calendar-graph-day-L3-bg);
+}
+
+rect.ContributionCalendar-day[data-level='4'] {
+    fill: var(--color-calendar-graph-day-L4-bg);
+}
+
+.calendar .width-full>.float-left {
+    display: none;
+}
+
 .calendar {
     font-family: Helvetica, arial;
     border: 1px solid #DDDDDD;
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
-    margin: 1em 2em;
+    margin: 0 auto;
 }
 
 .calendar-graph text.wday,
@@ -12,7 +44,6 @@
     font-size: 10px;
     fill: #aaa;
 }
-
 
 .contrib-legend {
     text-align: right;
@@ -42,7 +73,7 @@
 }
 
 .calendar-graph {
-    padding: 5px 15px 0;
+    padding: 5px 0 0;
     text-align: center;
 }
 
@@ -51,7 +82,6 @@
     text-align: center;
     border-left: 1px solid #ddd;
     border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
     font-size: 11px;
 }
 
@@ -72,7 +102,7 @@
     line-height: 1.3em;
     font-size: 24px;
     display: block;
-    color: #5e42a6;
+    color: #333;
 }
 
 .calendar img.spinner {
@@ -129,47 +159,42 @@ h2.f4.text-normal.mb-3 {
     display: none;
 }
 
-/* level 1 (no commits) */
-rect.day[fill="#ebedf0"] {
-    fill: #1d1d1d;
+.day-tooltip {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 99999;
+    padding: 10px;
+    font-size: 12px;
+    color: #959da5;
+    text-align: center;
+    background: rgba(0, 0, 0, .85);
+    border-radius: 3px;
+    display: none;
+    pointer-events: none;
 }
 
-.legend>:nth-child(1) {
-    background-color: #1d1d1d !important;
+.day-tooltip strong {
+    color: #dfe2e5;
 }
 
-/* level 2 */
-rect.day[fill="#9be9a8"] {
-    fill: #32286f;
+.day-tooltip.is-visible {
+    display: block;
 }
 
-.legend>:nth-child(2) {
-    background-color: #32286f !important;
+.day-tooltip:after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    margin: 0 0 0 -5px;
+    content: " ";
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, .85)
 }
 
-/* level 3 */
-rect.day[fill="#40c463"] {
-    fill: #552c6d;
-}
-
-.legend>:nth-child(3) {
-    background-color: #552c6d !important;
-}
-
-/* level 4 */
-rect.day[fill="#30a14e"] {
-    fill: #792f69;
-}
-
-.legend>:nth-child(4) {
-    background-color: #792f69 !important;
-}
-
-/* level 5 */
-rect.day[fill="#216e39"] {
-    fill: #b63664;
-}
-
-.legend>:nth-child(5) {
-    background-color: #b63664 !important;
+text.ContributionCalendar-label {
+    fill: #ccc;
+    font-size: 11px;
 }
